@@ -5,7 +5,7 @@ Bước 1: Tạo csdl có tên shoe_goc
 
 
 ![Screenshot (1036)](https://github.com/NoahSavant/shoestore_goc/assets/103120266/fbd2ea0b-5b03-4cd4-9426-4ea17ce05357)
-Bước 2: Khởi chạy project
+Bước 2: Khởi chạy project hoặc có thể chạy file jar đính kèm với câu lệnh java -jar shoestore_goc-0.0.1-SNAPSHOT.jar
 
 
 ![image](https://github.com/NoahSavant/shoestore_goc/assets/103120266/a73c0390-44d3-4427-8597-0b765a57e88c)
