@@ -19,13 +19,13 @@ public class Shoe {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "image")
+    @Column(name = "image", length = 150)
     private String image;
 
-    @Column(name = "name")
+    @Column(name = "name", length = 50)
     private String name;
 
-    @Column(name = "description")
+    @Column(name = "description", length = 400)
     private String description;
 
     @Column(name = "price")
