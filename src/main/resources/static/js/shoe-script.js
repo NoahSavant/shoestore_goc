@@ -13,13 +13,7 @@ function changeToInactive(id) {
         var Element = document.getElementById('c'+id);
         Element.style.display = "block";
 
-        var priceElement = parentElement.querySelector('.App_shopItemPrice_2SLiG');
-        var totalElement = document.getElementById('total');
-        var value = Number(priceElement.textContent.replace('$', ''));
-        var total = Number(totalElement.textContent.replace('$', ''));
-        total = total + value;
-        total = total.toFixed(2);
-        totalElement.textContent = '$' + total.toString();
+        total();
       }
     }
 }
@@ -41,60 +35,53 @@ function changeToActive(id) {
 }
 
 function increase(id) {
-  var parentElement = document.getElementById('p'+id);
+  var parentElement = document.getElementById('c'+id);
   if (parentElement) {
-    var priceElement = parentElement.querySelector('.App_shopItemPrice_2SLiG');
-    if (priceElement) {
-      var totalElement = document.getElementById('total');
-      var value = Number(priceElement.textContent.replace('$', ''));
-      var total = Number(totalElement.textContent.replace('$', ''));
-      total = total + value;
-      total = total.toFixed(2);
-      totalElement.textContent = '$' + total.toString();
-    }
-    var Element = document.getElementById('c'+id);
-    var numberElement = Element.querySelector('.App_cartItemCountNumber_1Evq9');
+    var numberElement = parentElement.querySelector('.App_cartItemCountNumber_1Evq9');
     var number = Number(numberElement.textContent) + 1;
     numberElement.textContent = number.toString();
+    total();
   }
 }
 
 function decrease(id) {
   var parentElement = document.getElementById('p'+id);
   if (parentElement) {
-    var priceElement = parentElement.querySelector('.App_shopItemPrice_2SLiG');
-    if (priceElement) {
-      var totalElement = document.getElementById('total');
-      var value = Number(priceElement.textContent.replace('$', ''));
-      var total = Number(totalElement.textContent.replace('$', ''));
-      total = Math.min(total - value);
-      total = total.toFixed(2);
-      totalElement.textContent = '$' + total.toString();
+    var parentElement = document.getElementById('c'+id);
+    if (parentElement) {
+      var numberElement = parentElement.querySelector('.App_cartItemCountNumber_1Evq9');
+      var number = Number(numberElement.textContent) - 1;
+      if(number == 0) {
+        numberElement.textContent = '1';
+        changeToActive(id);
+      }else {
+        numberElement.textContent = number.toString();
+      }
+      total();
     }
-  }
-  var Element = document.getElementById('c'+id);
-  var numberElement = Element.querySelector('.App_cartItemCountNumber_1Evq9');
-  var number = Number(numberElement.textContent) - 1;
-  if(number == 0) {
-    numberElement.textContent = '1';
-    changeToActive(id);
-  }else {
-    numberElement.textContent = number.toString();
   }
 }
 
 function remove(id) {
-  var parentElement = document.getElementById('p'+id);
-  var priceElement = parentElement.querySelector('.App_shopItemPrice_2SLiG');
   var Element = document.getElementById('c'+id);
-  var totalElement = document.getElementById('total');
-  var value = Number(priceElement.textContent.replace('$', ''));
-  var total = Number(totalElement.textContent.replace('$', ''));
   var numberElement = Element.querySelector('.App_cartItemCountNumber_1Evq9');
-  var total = Math.min(total - value*Number(numberElement.textContent), 0);
-  console.log(total);
+  numberElement.textContent = '1';
+  changeToActive(id);
+  total();
+}
+
+function total() {
+  var parentElement = document.getElementById('cart');
+  var childElements = parentElement.children;
+  var total = 0;
+  for (var i = 0; i < childElements.length; i++) {
+      if(childElements[i].style.display == 'block'){
+        var number = childElements[i].querySelector('.App_cartItemCountNumber_1Evq9');
+        var value = childElements[i].querySelector('.cartItemPrice');
+        total = total + Number(number.textContent)*Number(value.textContent.replace('$', ''));
+      }
+  }
+  var totalElement = document.getElementById('total');
   total = total.toFixed(2);
   totalElement.textContent = '$' + total.toString();
-  numberElement.textContent = 1;
-  changeToActive(id);
 }
