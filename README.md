@@ -25,4 +25,12 @@ Bước 4: truy cập đường dẫn http://localhost:8081/ sau khi đã thêm 
 Bước 5: thực hiện các thao tác như yêu cầu.
 
 - Deploy project
+![Screenshot (1043)](https://github.com/NoahSavant/shoestore_goc/assets/103120266/0644964a-6a9d-42b2-a539-70684c45e8d7)
+
 Truy cập đường dẫn (7 ngày kể từ ngày 2/7):  https://shoe-goc.onrender.com/
+
+![Screenshot (1045)](https://github.com/NoahSavant/shoestore_goc/assets/103120266/5882c008-30f2-4152-ae64-123ca8f112ef)
+Backend: render.com
+
+![Screenshot (1044)](https://github.com/NoahSavant/shoestore_goc/assets/103120266/dcd360a8-4e78-4f9a-b781-a92fa97cb6f1)
+Database host: cloudclusters 
