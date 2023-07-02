@@ -4,7 +4,7 @@
 Bước 1: Tạo csdl có tên shoe_goc
 <br>
 ![Screenshot (1036)](https://github.com/NoahSavant/shoestore_goc/assets/103120266/fbd2ea0b-5b03-4cd4-9426-4ea17ce05357)
-Bước 2: Khởi chạy project hoặc có thể chạy file jar đính kèm với câu lệnh java -jar shoestore_goc-0.0.1-SNAPSHOT.jar
+Bước 2: Khởi chạy project (Lưu ý cần cấu hình lại lại file application.yml vì project đã được chỉnh sửa để deploy)
 <br>
 ![image](https://github.com/NoahSavant/shoestore_goc/assets/103120266/a73c0390-44d3-4427-8597-0b765a57e88c) <br>
 Kiểm tra trong csdl đã tạo được bảng shoes
