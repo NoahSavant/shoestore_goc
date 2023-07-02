@@ -1,5 +1,5 @@
 # shoestore_goc
-Chạy Local project
+- Chạy Local project
 ![Screenshot (1042)](https://github.com/NoahSavant/shoestore_goc/assets/103120266/1a1d420f-21b8-41fd-8bc6-2dab08f901f6)
 Bước 1: Tạo csdl có tên shoe_goc
 <br>
@@ -23,3 +23,6 @@ Bước 4: truy cập đường dẫn http://localhost:8081/ sau khi đã thêm 
 
 ![Screenshot (1040)](https://github.com/NoahSavant/shoestore_goc/assets/103120266/156afe1a-6aaa-4bb6-bc09-4e466291d8d2)
 Bước 5: thực hiện các thao tác như yêu cầu.
+
+- Deploy project
+Truy cập đường dẫn (7 ngày kể từ ngày 2/7):  https://shoe-goc.onrender.com/
