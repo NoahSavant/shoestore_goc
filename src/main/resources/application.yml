@@ -5,13 +5,13 @@ spring:
   application:
     name: ShoeGOC
   datasource:
-    url: jdbc:mysql://localhost:3306/shoe_goc
-    username: root
-    password: 123456
+    url: jdbc:mysql://mysql-133978-0.cloudclusters.net:18267/shoe_goc
+    username: admin
+    password: SjIt6sfs
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
