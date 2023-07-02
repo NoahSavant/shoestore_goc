@@ -34,3 +34,6 @@ Backend: render.com
 
 ![Screenshot (1044)](https://github.com/NoahSavant/shoestore_goc/assets/103120266/dcd360a8-4e78-4f9a-b781-a92fa97cb6f1)
 Database host: cloudclusters 
+
+![Screenshot (1046)](https://github.com/NoahSavant/shoestore_goc/assets/103120266/aea04a37-d8bc-408b-bf74-c6d2adc26f6f)
+Dùng postman với domain live vừa deploy để push dữ liệu lên
