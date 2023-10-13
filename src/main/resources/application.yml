@@ -9,7 +9,7 @@ spring:
     # username: root
     # password: 123456
     # driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql-150103-0.cloudclusters.net:19995/shoe_goc
+    url: jdbc:mysql://mysql-150103-0.cloudclusters.net:19995/shoe_goc
     username: admin
     password: Enc7LHFn
     driver-class-name: com.mysql.cj.jdbc.Driver
