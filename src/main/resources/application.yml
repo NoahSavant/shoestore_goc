@@ -5,9 +5,13 @@ spring:
   application:
     name: ShoeGOC
   datasource:
-    url: jdbc:mysql://mysql-133978-0.cloudclusters.net:18267/shoe_goc
+    # url: jdbc:mysql://localhost:3306/shoe_goc
+    # username: root
+    # password: 123456
+    # driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql-150103-0.cloudclusters.net:19995/shoe_goc
     username: admin
-    password: SjIt6sfs
+    password: Enc7LHFn
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
