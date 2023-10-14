@@ -2,6 +2,8 @@ FROM adoptopenjdk:11-jre-hotspot
 
 WORKDIR /app
 
+EXPOSE 8081
+
 COPY shoestore_goc-0.0.1-SNAPSHOT.jar app.jar
 
 ENV DB_URL jdbc:mysql://mysql-133978-0.cloudclusters.net:3306/shoe_goc
